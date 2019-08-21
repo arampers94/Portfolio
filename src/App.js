@@ -10,6 +10,8 @@ import MyNavbar from './components/Navbar/index';
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
+import "../node_modules/video-react/dist/video-react.css";
+
 class App extends Component {
 
   componentDidMount() {
