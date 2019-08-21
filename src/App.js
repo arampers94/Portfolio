@@ -114,7 +114,7 @@ class App extends Component {
         </Element>
         {/* End about container */}
         <Element name="projects" className="element"></Element>
-        <Element name="projets-inner" className="element">
+        <Element name="projects-inner" className="element">
           <div className="projects-wrapper">
             <div id="project-section-title">
               <h1>Some of my recent work</h1>
