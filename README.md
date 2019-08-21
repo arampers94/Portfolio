@@ -8,7 +8,7 @@ Instructions for downloading the repo for development and testing purposes.
 
 ### Prerequisites
 
-Make sure you have either npm or yarn installed first in order to run the project.
+Make sure you have either npm or yarn installed first in order to install dependencies and run the project.
 
 ### Installing
 
@@ -17,7 +17,21 @@ Make sure you have either npm or yarn installed first in order to run the projec
 git clone https://github.com/arampers94/Portfolio
 ```
 
-2. Run the project
+2. cd into the project directory
+```
+cd Portfolio
+```
+
+3. Install dependencies
+```
+npm install
+```
+or
+```
+yarn install
+```
+
+4. Run the project
 ```
 npm start
 ```
