@@ -35,7 +35,7 @@ yarn start
 
 ## Contributors
 
-* **Amar Rampersaud** - *Initial work* - [Portfolio](https://amar-rampersaud.herokuapp.com/)
+* **Amar Rampersaud** - *Initial work* - [Portfolio](https://arampers94.github.io/Portfolio/)
 
 ## License
 
