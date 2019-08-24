@@ -51,11 +51,11 @@ class MyNavbar extends Component {
                   <NavLink className="navlink" href="/">Contact</NavLink>
                 </Link>
               </NavItem>
-              <NavItem>
-                {/* <NavLink className="navlink" href="Resources/Amar_Rampersaud_Resume.pdf" download>
+              {/* <NavItem>
+                <NavLink className="navlink" href="../../Resources/Amar_Rampersaud_Resume.pdf" download>
                   Resume
-                </NavLink> */}
-              </NavItem>
+                </NavLink>
+              </NavItem> */}
             </Nav>
           </Collapse>
         </Navbar>
