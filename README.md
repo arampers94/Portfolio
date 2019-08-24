@@ -37,7 +37,7 @@ npm start
 ```
 or
 ```
-yarn start
+yarn run start
 ```
 
 ## Tools used
