@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Row, Col, Button } from 'reactstrap';
-import FirstProject from './Resources/project-1.png';
-import CaptureGif from './Resources/capture.gif';
-import Robot from './Resources/robot.MOV';
-import { Player } from 'video-react';
-import Portfolio from './Resources/portfolio-landing-page.png';
 import MyNavbar from './components/Navbar/index';
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import Intro from './components/Intro';
+import About from './components/About'
+import Project1 from './components/Projects/project1';
+import Project2 from './components/Projects/project2';
+import Project3 from './components/Projects/project3';
+import Project4 from './components/Projects/project4';
+import Footer from './components/Footer';
 
 import "../node_modules/video-react/dist/video-react.css";
 
@@ -35,84 +36,11 @@ class App extends Component {
     return (
       <div id="content">
         <div id="landing-page" className="info">
-          <div id="intro">
-            <Row style={{ width: "100%" }}>
-              <MyNavbar />
-            </Row>
-            <Row>
-              <div style={{ margin: "auto", color: "white" }}>
-                <h1 style={{ fontSize: "4em" }}>
-                  Hi, my name's Amar.
-                </h1>
-                <p style={{ fontSize: "20px", fontStyle: "italic" }}>
-                  Full Stack Developer. Problem Solver. Tech Enthusiast.
-                </p>
-                <div id="icons">
-                  <a className="social-links" href="https://github.com/arampers94" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-github fa-2x" ></i>
-                  </a>{' '}
-                  <a className="social-links" href="https://www.linkedin.com/in/amar-rampersaud/" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-linkedin fa-2x"></i>
-                  </a>{' '}
-                  <a className="social-links" href="mailto:arampers94@gmail.com">
-                    <i className="far fa-envelope fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </Row>
-            <Row>
-              <div id="scroll-prompt-wrapper">
-                <Link activeClass="active" to="about" spy={true} smooth={true} duration={500}>
-                  <a id="scroll-prompt" href="/"><i class="fas fa-chevron-down fa-4x"></i></a>
-                </Link>
-              </div>
-            </Row>
-          </div>
-          {/* End intro */}
+          <Intro />
         </div>
-        {/* End landing page */}
         <Element name="about" className="element">
-          <div id="about-container" className="project-block">
-            <Row style={{ paddingBottom: "50px" }}>
-              <Col>
-                <h1>An Exceptional Team Begins With its Teammates.</h1>
-                <hr />
-              </Col>
-            </Row>
-            <Row>
-              <Col className="about-col">
-                <h5>Who am I?</h5>
-                <p>
-                  A full stack developer, passionate about code and always
-                  looking to improve my craft however I can. I enjoy learning
-                  new technologies on my own as well as from others. I am also
-                  confident in my ability to quickly translate new skills to
-                  production.
-                </p>
-              </Col>
-              <Col className="about-col">
-                <h5>Why me?</h5>
-                <p>
-                  I'm a great team player. In addition to being a motivated self-starter,
-                  adaptable, and a fast-learner, I am also friendly, have excellent
-                  communication skills, am open to new ideas, and work well independently
-                  as well as collaboratively.
-                 </p>
-              </Col>
-              <Col className="about-col">
-                <h5>What am I looking for?</h5>
-                <p>
-                  The opportunity to apply my problem-solving and web dev skills
-                  to solve some of the industry's toughest challenges in order to
-                  increase efficiency and reduce costs, work alongside
-                  creative, talented, and motivated individuals of all backgrounds,
-                  and continue improving my skills.
-                </p>
-              </Col>
-            </Row>
-          </div>
+          <About />
         </Element>
-        {/* End about container */}
         <Element name="projects" className="element"></Element>
         <Element name="projects-inner" className="element">
           <div className="projects-wrapper">
@@ -120,133 +48,16 @@ class App extends Component {
               <h1>Some of my recent work</h1>
               <hr />
             </div>
-            <div id="project-1" className="project-block">
-              <Row>
-                <Col sm="12" md={{ size: 6 }}>
-                  <div className="media-block">
-                    <img style={{ width: "100%" }} src={FirstProject} alt="First project" />
-                  </div>
-                </Col>
-                <Col sm="12" md={{ size: 6 }}>
-                  <div className="project-desc">
-                    <h1>Context</h1>
-                    <p>
-                      A personal project I built to demonstrate my skill and ability to work
-                      across the full stack from front-end design to back-end data management.
-                      It works the same way you would expect a typical blog site to - users have
-                      the ability to sign up, create, rate, and comment on posts.
-                    </p>
-                    <Button outline color="primary" href="https://context-fceab.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
-                      View
-                    </Button>{' '}
-                    <Button outline color="success" href="https://github.com/arampers94/Context" target="_blank" rel="noopener noreferrer">
-                      Source
-                    </Button>{' '}
-                  </div>
-                </Col>
-              </Row>
-            </div>
-            {/* End project 1 */}
-            <div id="project-2" className="project-block">
-              <Row>
-                <Col sm="12" md={{ size: 6 }}>
-                  <div className="project-desc">
-                    <h1>Capture</h1>
-                    <p>
-                      This is one of the more fun projects I've had the opportunity to work on. Built
-                      with React Native, this simple cross-platform smartphone app allows users to create,
-                      update, delete notes, and set reminders. It also features an experience bar
-                      and a level up system as an incentive for the user to keep using the app.
-                    </p>
-                    <Button outline color="success" href="https://github.com/mouthwash/Capture" target="_blank" rel="noopener noreferrer">
-                      Source
-                    </Button>{' '}
-                  </div>
-                </Col>
-                <Col sm="12" md={{ size: 6 }}>
-                  <div className="media-block" id="capture-gif">
-                    <img style={{ width: "65%" }} src={CaptureGif} alt="Second project" />
-                  </div>
-                </Col>
-              </Row>
-            </div>
-            {/* End project 2 */}
-            <div id="project-3" className="project-block">
-              <Row>
-                <Col sm="12" md={{ size: 6 }}>
-                  <div className="media-block" id="robot-video">
-                    <Player
-                      playsInline
-                      src={Robot}
-                      className="media-block"
-                    />
-                  </div>
-                </Col>
-                <Col sm="12" md={{ size: 6 }}>
-                  <div className="project-desc">
-                    <h1>Gesture Controlled Robot</h1>
-                    <p>
-                      <em>I built an actual remote controlled bot, how cool is that!? </em>
-                      That's exactly what I thought once I finally got this one up and running. As the name
-                      suggests, the bot responds to gestures given by the remote. The bot and remote
-                      communicate through Arduino microprocessors. Check it out in action.
-                    </p>
-                    <Button outline color="success" href="https://github.com/arampers94/gesture-controlled-robot" target="_blank" rel="noopener noreferrer">
-                      Source
-                    </Button>{' '}
-                    <Button outline color="info" href="https://www.arduino.cc/en/Guide/Introduction" target="_blank" rel="noopener noreferrer">
-                      What is Arduino?
-                    </Button>{' '}
-                  </div>
-                </Col>
-              </Row>
-            </div>
-            {/* End project 3 */}
-            <div id="project-4" className="project-block">
-              <Row>
-                <Col sm="12" md={{ size: 6 }}>
-                  <div className="project-desc">
-                    <h1>This Portfolio</h1>
-                    <p>
-                      This site is also one of my projects! I built it myself with HTML, CSS,
-                      JS, and React. The design is simple and intuitive, making it easy to
-                      find the important stuff and a pleasure to read. The source code is available
-                      on my Github page.
-                    </p>
-                    <Button outline color="success" href="https://github.com/arampers94/Portfolio" target="_blank" rel="noopener noreferrer">
-                      Source
-                    </Button>{' '}
-                  </div>
-                </Col>
-                <Col sm="12" md={{ size: 6 }}>
-                  <div className="media-block">
-                    <img style={{ width: "100%" }} src={Portfolio} alt="Second project" />
-                  </div>
-                </Col>
-              </Row>
-            </div>
-            {/* End project 4 */}
+            <Project1 />
+            <Project2 />
+            <Project3 />
+            <Project4 />
           </div>
         </Element>
-        {/* End projects wrapper */}
         <Element name="contact" className="element">
-          <div id="contact-info-section" className="project-block">
-            <Row>
-              <Col>
-                <h1>Sound good? Let's get to work.</h1>
-                <p>Connect with me on LinkedIn or send an email.</p>
-                <a className="social-links" href="https://www.linkedin.com/in/amar-rampersaud/" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-linkedin fa-2x"></i>
-                </a>{' '}
-                <a className="social-links" href="mailto:arampers94@gmail.com">
-                  <i class="far fa-envelope fa-2x"></i>
-                </a>
-              </Col>
-            </Row>
-          </div>
+          <Footer />
         </Element>
       </div>
-      // End content
     );
   }
 }
