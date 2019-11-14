@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.03603b53.chunk.css",
-    "main.js": "/Portfolio/static/js/main.b1b1e544.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.b1b1e544.chunk.js.map",
-    "runtime~main.js": "/Portfolio/static/js/runtime~main.aeacf694.js",
-    "runtime~main.js.map": "/Portfolio/static/js/runtime~main.aeacf694.js.map",
-    "static/css/2.9c78701f.chunk.css": "/Portfolio/static/css/2.9c78701f.chunk.css",
-    "static/js/2.6b519d67.chunk.js": "/Portfolio/static/js/2.6b519d67.chunk.js",
-    "static/js/2.6b519d67.chunk.js.map": "/Portfolio/static/js/2.6b519d67.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.19ec747c.chunk.css",
+    "main.js": "/Portfolio/static/js/main.59814f1d.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.59814f1d.chunk.js.map",
+    "runtime~main.js": "/Portfolio/static/js/runtime~main.6977af04.js",
+    "runtime~main.js.map": "/Portfolio/static/js/runtime~main.6977af04.js.map",
+    "static/css/2.0624914a.chunk.css": "/Portfolio/static/css/2.0624914a.chunk.css",
+    "static/js/2.891fff9c.chunk.js": "/Portfolio/static/js/2.891fff9c.chunk.js",
+    "static/js/2.891fff9c.chunk.js.map": "/Portfolio/static/js/2.891fff9c.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.ffd2e8e4686e3c8f3edef398d2d7c981.js": "/Portfolio/precache-manifest.ffd2e8e4686e3c8f3edef398d2d7c981.js",
+    "precache-manifest.48fed0ff8ab3a7193a69326d02ffce9f.js": "/Portfolio/precache-manifest.48fed0ff8ab3a7193a69326d02ffce9f.js",
     "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/2.9c78701f.chunk.css.map": "/Portfolio/static/css/2.9c78701f.chunk.css.map",
-    "static/css/main.03603b53.chunk.css.map": "/Portfolio/static/css/main.03603b53.chunk.css.map",
-    "static/media/capture.gif": "/Portfolio/static/media/capture.fdc4d169.gif",
+    "static/css/2.0624914a.chunk.css.map": "/Portfolio/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.19ec747c.chunk.css.map": "/Portfolio/static/css/main.19ec747c.chunk.css.map",
     "static/media/context.png": "/Portfolio/static/media/context.12f3c1b8.png",
     "static/media/index.css": "/Portfolio/static/media/oculus.c21b41e7.jpg",
-    "static/media/portfolio-landing-page.png": "/Portfolio/static/media/portfolio-landing-page.73e7cf23.png",
-    "static/media/star-drug.png": "/Portfolio/static/media/star-drug.41381cd7.png"
+    "static/media/portfolio-landing-page.png": "/Portfolio/static/media/portfolio-landing-page.ea4ea81d.png",
+    "static/media/star-drug.png": "/Portfolio/static/media/star-drug.f794415e.png",
+    "static/media/travel_blog.png": "/Portfolio/static/media/travel_blog.75cd08da.png"
   }
 }
