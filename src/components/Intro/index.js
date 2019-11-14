@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Button } from 'reactstrap';
+import { Row } from 'reactstrap';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import MyNavbar from '../Navbar';
 
@@ -10,12 +10,12 @@ const Intro = (props) => {
         <MyNavbar />
       </Row>
       <Row>
-        <div style={{ margin: "auto", color: "white" }}>
+        <div className="intro-title">
           <h1 style={{ fontSize: "4em" }}>
             Hi, my name's Amar.
           </h1>
           <p style={{ fontSize: "20px", fontStyle: "italic" }}>
-            Full Stack Developer. Problem Solver. Tech Enthusiast.
+            Web Developer. Problem Solver. React Ninja.
           </p>
           <div id="icons">
             <a className="social-links" href="https://github.com/arampers94" target="_blank" rel="noopener noreferrer">

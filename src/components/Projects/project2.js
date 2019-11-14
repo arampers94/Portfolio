@@ -1,31 +1,31 @@
 import React from 'react';
 import { Row, Col, Button } from 'reactstrap';
-import Context from '../../Resources/context.png';
+import StarDrugPic from '../../Resources/star-drug.png'
 
 const Project2 = (props) => {
   return (
-    <div id="project-1" className="project-block">
+    <div className="project-block">
       <Row>
         <Col sm="12" md={{ size: 6 }}>
           <div className="project-desc">
-            <h1>Context</h1>
-            <p>
-              A personal project I built to demonstrate my skill and ability to work
-              across the full stack from front-end design to back-end data management.
-              It works the same way you would expect a typical blog site to - users have
-              the ability to sign up, create, rate, and comment on posts.
+            <h1>Star Drug</h1>
+            <p className="desc-text">
+              This is a website I built for a local small business pharmacy.
+              I designed the layout myself with Sketch and implemented
+              responsive, mobile-friendly features with React.
+              <br /> <br />
+              Tools: React, Redux, Material UI, Firestore (NoSQL database), Firebase Auth, Sketch.
+              <br /> <br />
+              Features: Responsive design, Search, Sort, Inspect item, Checkout, Sign up/Sign in.
             </p>
-            <Button outline color="primary" href="https://context-fceab.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+            <Button outline color="primary" href="https://star-drug.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
               View
-            </Button>{' '}
-            <Button outline color="success" href="https://github.com/arampers94/Context" target="_blank" rel="noopener noreferrer">
-              Source
             </Button>{' '}
           </div>
         </Col>
-        <Col sm="12" md={{ size: 6 }}>
-          <div className="media-block">
-            <img style={{ width: "100%" }} src={Context} alt="First project" />
+        <Col sm="12" md={{ size: 6 }} className="image-wrapper">
+          <div>
+            <img src={StarDrugPic} className="project-image" alt="Star Drug Pic" />
           </div>
         </Col>
       </Row>

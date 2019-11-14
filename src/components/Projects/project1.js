@@ -1,32 +1,31 @@
 import React from 'react';
 import { Row, Col, Button } from 'reactstrap';
-import StarDrugPic from '../../Resources/star-drug.png'
+import TravelBlog from '../../Resources/travel_blog.png'
 
 const Project1 = (props) => {
   return (
-    <div id="project-3" className="project-block">
+    <div className="project-block">
       <Row>
-        <Col sm="12" md={{ size: 6 }}>
-          <div className="media-block">
-            <img src={StarDrugPic} width="100%" alt="Star Drug Pic" />
+        <Col sm="12" md="6" className="image-wrapper">
+          <div>
+            <img src={TravelBlog} className="project-image" alt="Star Drug Pic" />
           </div>
         </Col>
         <Col sm="12" md={{ size: 6 }}>
           <div className="project-desc">
-            <h1>Star Drug</h1>
-            <p>
-              This is a website I built for a local small business pharmacy using React, Redux, and Firebase.
-              Styled with Material UI for React, I designed the layout myself with Sketch and implemented
-              responsive, mobile-friendly features with React. Features include product search, sort,
-              inspection, and checkout. Users can also create accounts to leave reviews on products and save
-              their checkout details for future purchases.
+            <h1>Travel Blog</h1>
+            <p className="desc-text">
+              Originally designed by Anastasia on dribbble.com, I translated this concept from design
+              to code.
+              <br /> <br />
+              Tools: React, Material UI
             </p>
-            <Button outline color="primary" href="https://star-drug.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+            <Button outline color="primary" href="https://travel-blog-a435f.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
               View
             </Button>{' '}
-            {/* <Button outline color="success" href="" target="_blank" rel="noopener noreferrer">
-              Source
-            </Button>{' '} */}
+            <Button outline color="danger" href="https://dribbble.com/shots/8131732-Travel-Blog-Web-Design" target="_blank" rel="noopener noreferrer">
+              Original Design
+            </Button>{' '}
           </div>
         </Col>
       </Row>

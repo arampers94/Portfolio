@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import MyNavbar from './components/Navbar/index';
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import Intro from './components/Intro';
@@ -10,8 +9,6 @@ import Project2 from './components/Projects/project2';
 import Project3 from './components/Projects/project3';
 import Project4 from './components/Projects/project4';
 import Footer from './components/Footer';
-
-import "../node_modules/video-react/dist/video-react.css";
 
 class App extends Component {
 
@@ -38,25 +35,28 @@ class App extends Component {
         <div id="landing-page" className="info">
           <Intro />
         </div>
-        <Element name="about" className="element">
-          <About />
-        </Element>
-        <Element name="projects" className="element"></Element>
-        <Element name="projects-inner" className="element">
-          <div className="projects-wrapper">
-            <div id="project-section-title">
-              <h1>Some of my recent work</h1>
-              <hr />
-            </div>
-            <Project1 />
-            <Project2 />
-            <Project3 />
-            <Project4 />
+        <div className="content-body">
+          <div>
+            <Element name="about" className="element">
+              <About />
+            </Element>
+            <Element name="projects" className="element">
+              <div className="projects-wrapper">
+                <div id="project-section-title">
+                  <h1>Some of my recent work</h1>
+                  <hr />
+                </div>
+                <Project1 />
+                <Project2 />
+                <Project3 />
+                <Project4 />
+              </div>
+            </Element>
+            <Element name="contact" className="element">
+              <Footer />
+            </Element>
           </div>
-        </Element>
-        <Element name="contact" className="element">
-          <Footer />
-        </Element>
+        </div>
       </div>
     );
   }

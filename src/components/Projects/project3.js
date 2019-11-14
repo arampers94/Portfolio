@@ -1,26 +1,29 @@
 import React from 'react';
 import { Row, Col, Button } from 'reactstrap';
-import CaptureGif from '../../Resources/capture.gif';
+import Context from '../../Resources/context.png';
 
 const Project3 = (props) => {
   return (
-    <div id="project-2" className="project-block">
+    <div className="project-block">
       <Row>
-        <Col sm="12" md={{ size: 6 }}>
-          <div className="media-block" id="capture-gif">
-            <img style={{ width: "65%" }} src={CaptureGif} alt="Second project" />
+        <Col sm="12" md={{ size: 6 }} className="image-wrapper">
+          <div>
+            <img className="project-image" src={Context} alt="First project" />
           </div>
         </Col>
         <Col sm="12" md={{ size: 6 }}>
           <div className="project-desc">
-            <h1>Capture</h1>
-            <p>
-              This is one of the more fun projects I've had the opportunity to work on. Built
-              with React Native, this simple cross-platform smartphone app allows users to create,
-              update, delete notes, and set reminders. It also features an experience bar
-              and a level up system as an incentive for the user to keep using the app.
-                    </p>
-            <Button outline color="success" href="https://github.com/mouthwash/Capture" target="_blank" rel="noopener noreferrer">
+            <h1>Context</h1>
+            <p className="desc-text">
+              A personal project I built to demonstrate my ability to work
+              across the full stack and learn new technologies.
+              <br /> <br />
+              Tools: React, Redux, Firebase
+            </p>
+            <Button outline color="primary" href="https://context-fceab.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+              View
+            </Button>{' '}
+            <Button outline color="success" href="https://github.com/arampers94/Context" target="_blank" rel="noopener noreferrer">
               Source
             </Button>{' '}
           </div>
