@@ -14,22 +14,31 @@ body {
     monospace;
 } */
 
+@media screen and (max-width: 767px) {
+  #project-2, #project-4 {
+    flex-direction: column-reverse;
+  }
+  
+  .project-desc {
+    margin: 25px 0 !important;
+  }
+}
+
 a.social-links, a#scroll-prompt, a:link {
   color: white;
   position: relative;
 }
 
 #about-container {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   text-align: center;
-  padding-top: 150px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-bottom: 150px;
   color: white;
 }
 
-#about-container .about-col {
-  padding: 0 50px;
+.about-col {
+  padding: 0 30px !important;
 }
 
 #about-container hr {
@@ -40,28 +49,20 @@ a.social-links, a#scroll-prompt, a:link {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
 
-.about-title {
+.about-title, .about-subtitle, .about-text {
   color: #dadde8;
-}
-
-.about-subtitle {
-  color: #dadde8;
-  
-}
-
-.about-text {
-  color: #dadde8;
-}
-
-#content {
-  width: 100%;
-  background-color: #050b2b;
 }
 
 #contact-info-section {
   width: 100%;
   text-align: center;
   padding-bottom: 200px;
+}
+
+#content {
+  width: 100%;
+  background-color: #050b2b;
+  background-image: linear-gradient(to bottom, #050b2b, #24035a, #050b2b )
 }
 
 .content-body {
@@ -72,17 +73,18 @@ a.social-links, a#scroll-prompt, a:link {
 }
 
 .desc-text {
-  font-size: 18px
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.desc-subtext {
+  font-size: 16px;
 }
 
 #icons {
   size: 100px;
   margin-top: 10px;
   color: #e4e6f0;
-}
-
-.image-wrapper {
-  padding-top: 35px
 }
 
 #intro {
@@ -108,6 +110,7 @@ a.social-links, a#scroll-prompt, a:link {
   background-position: center;
   text-align: center;
   text-shadow: black 0px 0px 20px;
+  margin-bottom: 150px;
 }
 
 #navbar {
@@ -120,15 +123,21 @@ a.social-links, a#scroll-prompt, a:link {
   opacity: 1;
 }
 
+.overlay {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+}
+
 .project-block {
   height: 100%;
   padding-bottom: 150px;
-  background-color: #050b2b;
   color: #dadde8;
 }
 
 .project-desc {
-  margin: 25px;
+  margin: 0 25px;
   font-size: 20px;
 }
 
@@ -140,11 +149,10 @@ a.social-links, a#scroll-prompt, a:link {
 #project-section-title {
   color: #dadde8;
   text-align: left;
-  margin-top: 200px;
-  margin-bottom: 100px;
+  margin-bottom: 100px !important;
 }
 
-#project-section-title hr {
+.project-section-title-underline hr {
   display: block;
   color: white;
   border: 0;

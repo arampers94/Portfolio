@@ -4,9 +4,9 @@ import Portfolio from '../../Resources/portfolio-landing-page.png';
 
 const Project4 = (props) => {
   return (
-    <div id="project-4" className="project-block">
-      <Row>
-        <Col sm="12" md="6">
+    <div className="project-block">
+      <Row id="project-4">
+        <Col sm="12" md="6" className="wow fadeInLeft">
           <div className="project-desc">
             <h1>This Portfolio</h1>
             <p className="desc-text">
@@ -21,7 +21,7 @@ const Project4 = (props) => {
             </Button>{' '}
           </div>
         </Col>
-        <Col sm="12" md="6" className="image-wrapper">
+        <Col sm="12" md="6" className="wow fadeInRight">
           <div>
             <img className="project-image" src={Portfolio} alt="Second project" />
           </div>

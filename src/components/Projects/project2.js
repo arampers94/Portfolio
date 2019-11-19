@@ -1,31 +1,44 @@
 import React from 'react';
 import { Row, Col, Button } from 'reactstrap';
-import StarDrugPic from '../../Resources/star-drug.png'
+import TravelBlog from '../../Resources/travel_blog.png'
+
+const anastasia = (
+  <a href="https://dribbble.com/anastasia-tino" target="_blank" rel="noopener noreferrer">
+    Anastasia
+  </a>
+)
+
+const dribbble = (
+  <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">
+    dribbble.com
+  </a>
+)
 
 const Project2 = (props) => {
   return (
     <div className="project-block">
-      <Row>
-        <Col sm="12" md={{ size: 6 }}>
+      <Row id="project-2">
+        <Col sm="12" md="6" className="wow fadeInLeft">
           <div className="project-desc">
-            <h1>Star Drug</h1>
+            <h1>Travel Blog</h1>
             <p className="desc-text">
-              This is a website I built for a local small business pharmacy.
-              I designed the layout myself with Sketch and implemented
-              responsive, mobile-friendly features with React.
-              <br /> <br />
-              Tools: React, Redux, Material UI, Firestore (NoSQL database), Firebase Auth, Sketch.
-              <br /> <br />
-              Features: Responsive design, Search, Sort, Inspect item, Checkout, Sign up/Sign in.
+              Originally designed by {anastasia} on {dribbble}, I translated this concept from design
+              to code.
             </p>
-            <Button outline color="primary" href="https://star-drug.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+            <p className="desc-subtext">
+              Tools: React, Material UI
+            </p>
+            <Button outline color="primary" href="https://travel-blog-a435f.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
               View
+            </Button>{' '}
+            <Button outline color="danger" href="https://dribbble.com/shots/8131732-Travel-Blog-Web-Design" target="_blank" rel="noopener noreferrer">
+              Original Design
             </Button>{' '}
           </div>
         </Col>
-        <Col sm="12" md={{ size: 6 }} className="image-wrapper">
+        <Col sm="12" md="6" className="wow fadeInRight">
           <div>
-            <img src={StarDrugPic} className="project-image" alt="Star Drug Pic" />
+            <img src={TravelBlog} className="project-image" alt="Travel Blog" />
           </div>
         </Col>
       </Row>

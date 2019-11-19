@@ -5,15 +5,17 @@ const About = (props) => {
   return (
     <div id="about-container">
       <Row style={{ paddingBottom: "50px" }}>
-        <Col>
+        <Col xs="12" className="wow fadeInDown" data-wow-delay=".25s">
           <div className="about-title">
             <h1>An Exceptional Team Begins With its Teammates.</h1>
           </div>
-          <hr />
+        </Col>
+        <Col xs="12">
+          <hr className="wow zoomIn" />
         </Col>
       </Row>
       <Row>
-        <Col className="about-col">
+        <Col xs="12" md="4" className="about-col wow zoomIn" data-wow-delay=".25s">
           <div className="about-subtitle">
             <h1>Who am I?</h1>
           </div>
@@ -27,7 +29,7 @@ const About = (props) => {
             </p>
           </div>
         </Col>
-        <Col className="about-col">
+        <Col xs="12" md="4" className="about-col wow zoomIn" data-wow-delay=".5s">
           <div className="about-subtitle">
             <h1>Why me?</h1>
           </div>
@@ -40,7 +42,7 @@ const About = (props) => {
           </p>
           </div>
         </Col>
-        <Col className="about-col">
+        <Col xs="12" md="4" className="about-col wow zoomIn" data-wow-delay=".75s">
           <div className="about-subtitle">
             <h1>My Goals</h1>
           </div>

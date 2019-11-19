@@ -1,30 +1,33 @@
 import React from 'react';
 import { Row, Col, Button } from 'reactstrap';
-import TravelBlog from '../../Resources/travel_blog.png'
+import NelsonMurdock from '../../Resources/nelson-and-murdock.png'
 
 const Project1 = (props) => {
   return (
     <div className="project-block">
       <Row>
-        <Col sm="12" md="6" className="image-wrapper">
+        <Col sm="12" md="6" className="image-wrapper wow fadeInLeft">
           <div>
-            <img src={TravelBlog} className="project-image" alt="Star Drug Pic" />
+            <img src={NelsonMurdock} className="project-image" alt="Star Drug Pic" />
           </div>
         </Col>
-        <Col sm="12" md={{ size: 6 }}>
+        <Col sm="12" md="6" className="wow fadeInRight">
           <div className="project-desc">
-            <h1>Travel Blog</h1>
+            <h1>Nelson and Murdock | Attorneys at Law</h1>
             <p className="desc-text">
-              Originally designed by Anastasia on dribbble.com, I translated this concept from design
-              to code.
-              <br /> <br />
-              Tools: React, Material UI
+              Website for a law firm based in Hell's Kitchen, New York City, NY.
+              Nelson and Murdock is a fictional law firm based on the popular Netflix
+              series, Daredevil. This is my concept for what their website would look
+              like.
             </p>
-            <Button outline color="primary" href="https://travel-blog-a435f.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+            <p className="desc-subtext">
+              Tools: React, Shards React, CSS, React Reveal, Wow.js
+            </p>
+            <Button outline color="primary" href="https://nelson-and-murdock-law-firm.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
               View
             </Button>{' '}
-            <Button outline color="danger" href="https://dribbble.com/shots/8131732-Travel-Blog-Web-Design" target="_blank" rel="noopener noreferrer">
-              Original Design
+            <Button outline color="success" href="https://github.com/arampers94/nelson-and-murdock-law-firm" target="_blank" rel="noopener noreferrer">
+              Source
             </Button>{' '}
           </div>
         </Col>

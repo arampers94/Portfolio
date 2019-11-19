@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
 import * as Scroll from 'react-scroll';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-import Intro from './components/Intro';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import Intro from './components/Intro'
 import About from './components/About'
-import Project1 from './components/Projects/project1';
-import Project2 from './components/Projects/project2';
-import Project3 from './components/Projects/project3';
-import Project4 from './components/Projects/project4';
-import Footer from './components/Footer';
+import Project1 from './components/Projects/project1'
+import Project2 from './components/Projects/project2'
+import Project3 from './components/Projects/project3'
+import Project4 from './components/Projects/project4'
+import Footer from './components/Footer'
+import { Row, Col } from 'reactstrap'
 
 class App extends Component {
 
@@ -42,10 +42,14 @@ class App extends Component {
             </Element>
             <Element name="projects" className="element">
               <div className="projects-wrapper">
-                <div id="project-section-title">
-                  <h1>Some of my recent work</h1>
-                  <hr />
-                </div>
+                <Row id="project-section-title">
+                  <Col xs="12" className="wow fadeInDown" data-wow-delay=".25s">
+                    <h1>Some of my recent work</h1>
+                  </Col>
+                  <Col xs="12" className="project-section-title-underline wow zoomIn">
+                    <hr />
+                  </Col>
+                </Row>
                 <Project1 />
                 <Project2 />
                 <Project3 />
@@ -58,7 +62,7 @@ class App extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 

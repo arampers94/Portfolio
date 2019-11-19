@@ -1,30 +1,29 @@
 import React from 'react';
 import { Row, Col, Button } from 'reactstrap';
-import Context from '../../Resources/context.png';
+import StarDrugPic from '../../Resources/star-drug.png'
 
 const Project3 = (props) => {
   return (
     <div className="project-block">
       <Row>
-        <Col sm="12" md={{ size: 6 }} className="image-wrapper">
+        <Col sm="12" md="6" className="wow fadeInLeft">
           <div>
-            <img className="project-image" src={Context} alt="First project" />
+            <img src={StarDrugPic} className="project-image" alt="Star Drug" />
           </div>
         </Col>
-        <Col sm="12" md={{ size: 6 }}>
+        <Col sm="12" md="6" className="wow fadeInRight">
           <div className="project-desc">
-            <h1>Context</h1>
+            <h1>Star Drug</h1>
             <p className="desc-text">
-              A personal project I built to demonstrate my ability to work
-              across the full stack and learn new technologies.
-              <br /> <br />
-              Tools: React, Redux, Firebase
+              This is a website I built for a local small business pharmacy.
+              I designed the layout myself with Sketch and implemented
+              responsive, mobile-friendly features with React.
             </p>
-            <Button outline color="primary" href="https://context-fceab.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+            <p className="desc-subtext">
+              Tools: React, Redux, React Router, Material UI, Firestore (NoSQL database), Firebase Auth, Sketch.
+            </p>
+            <Button outline color="primary" href="https://star-drug.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
               View
-            </Button>{' '}
-            <Button outline color="success" href="https://github.com/arampers94/Context" target="_blank" rel="noopener noreferrer">
-              Source
             </Button>{' '}
           </div>
         </Col>
