@@ -41,12 +41,13 @@ a.social-links, a#scroll-prompt, a:link {
   padding: 0 30px !important;
 }
 
-#about-container hr {
+hr {
   display: block;
-  color: white;
+  background-color: white;
+  opacity: 0.3;
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)); */
 }
 
 .about-title, .about-subtitle, .about-text {
@@ -94,6 +95,34 @@ a.social-links, a#scroll-prompt, a:link {
   size: 100px;
   margin-top: 10px;
   color: #e4e6f0;
+}
+
+.icon {
+  padding: 0 20px 10px 0;
+}
+
+.icon-background {
+  position: absolute;
+  height: 38px;
+  width: 38px;
+  background-color: white;
+  border-radius: 20px;
+  z-index: 0;
+  transform: translateX(3px) translateY(1px);
+}
+
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.icon-img {
+  position: relative;
+  z-index: 1;
+  height: 40px;
+  width: 40px;
 }
 
 #intro {
@@ -163,7 +192,6 @@ a.social-links, a#scroll-prompt, a:link {
 }
 
 .project-desc {
-  margin: 0 25px;
   font-size: 20px;
 }
 
@@ -176,14 +204,6 @@ a.social-links, a#scroll-prompt, a:link {
   color: #dadde8;
   text-align: left;
   margin-bottom: 100px !important;
-}
-
-.project-section-title-underline hr {
-  display: block;
-  color: white;
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
 }
 
 .project-image {

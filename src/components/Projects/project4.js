@@ -12,11 +12,12 @@ const Project4 = (props) => {
               This Portfolio
             </h2>
             <p className="desc-text">
-              This portfolio is also one of my projects! The design is simple and intuitive, making it easy to
-              find the important stuff and a pleasure to read. Source code available on my Github page.
+              My portfolio is always a work in progress. As I continue to improve my web dev skills,
+              I showcase what I've learned by improving my portfolio itself from little things like
+              spacing and typography to larger ones like animations and overall design.
             </p>
             <p className="desc-subtext">
-              Tools: React, Reactstrap, CSS.
+              Tools: React, Reactstrap, CSS, Wow.js.
             </p>
             <Button outline color="success" href="https://github.com/arampers94/Portfolio" target="_blank" rel="noopener noreferrer">
               Source
