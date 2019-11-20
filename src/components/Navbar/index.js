@@ -27,7 +27,7 @@ class MyNavbar extends Component {
   render() {
     return (
       <div style={{ width: "100%" }}>
-        <Navbar id="navbar" fixed="top" color="rgb(0, 0, 0)" dark expand="md">
+        <Navbar id="navbar" fixed="top" color="rgb(0, 0, 0)" dark expand="md" className="wow fadeInDown" data-wow-delay=".5s">
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto">

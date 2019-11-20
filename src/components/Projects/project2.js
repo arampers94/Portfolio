@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Button } from 'reactstrap';
-import TravelBlog from '../../Resources/travel_blog.png'
+import TravelBlog from '../../Resources/travel_blog.jpg'
 
 const anastasia = (
   <a href="https://dribbble.com/anastasia-tino" target="_blank" rel="noopener noreferrer">
@@ -20,7 +20,9 @@ const Project2 = (props) => {
       <Row id="project-2">
         <Col sm="12" md="6" className="wow fadeInLeft">
           <div className="project-desc">
-            <h1>Travel Blog</h1>
+            <h2 className="desc-title">
+              Travel Blog
+            </h2>
             <p className="desc-text">
               Originally designed by {anastasia} on {dribbble}, I translated this concept from design
               to code.

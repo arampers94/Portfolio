@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Button } from 'reactstrap';
-import NelsonMurdock from '../../Resources/nelson-and-murdock.png'
+import NelsonMurdock from '../../Resources/nelson-and-murdock.jpg'
 
 const Project1 = (props) => {
   return (
@@ -13,7 +13,9 @@ const Project1 = (props) => {
         </Col>
         <Col sm="12" md="6" className="wow fadeInRight">
           <div className="project-desc">
-            <h1>Nelson and Murdock | Attorneys at Law</h1>
+            <h2 className="desc-title">
+              Nelson and Murdock | Attorneys at Law
+            </h2>
             <p className="desc-text">
               Website for a law firm based in Hell's Kitchen, New York City, NY.
               Nelson and Murdock is a fictional law firm based on the popular Netflix

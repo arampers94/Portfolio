@@ -13,7 +13,9 @@ const Project3 = (props) => {
         </Col>
         <Col sm="12" md="6" className="wow fadeInRight">
           <div className="project-desc">
-            <h1>Star Drug</h1>
+            <h2 className="desc-title">
+              Star Drug
+            </h2>
             <p className="desc-text">
               This is a website I built for a local small business pharmacy.
               I designed the layout myself with Sketch and implemented

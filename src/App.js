@@ -9,6 +9,7 @@ import Project3 from './components/Projects/project3'
 import Project4 from './components/Projects/project4'
 import Footer from './components/Footer'
 import { Row, Col } from 'reactstrap'
+import './App.scss'
 
 class App extends Component {
 
@@ -30,6 +31,7 @@ class App extends Component {
   }
 
   render() {
+
     return (
       <div id="content">
         <div id="landing-page" className="info">
@@ -44,7 +46,9 @@ class App extends Component {
               <div className="projects-wrapper">
                 <Row id="project-section-title">
                   <Col xs="12" className="wow fadeInDown" data-wow-delay=".25s">
-                    <h1>Some of my recent work</h1>
+                    <h1 className="section-title">
+                      Some of my recent work
+                    </h1>
                   </Col>
                   <Col xs="12" className="project-section-title-underline wow zoomIn">
                     <hr />

@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Asap|Roboto|Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Asap|Montserrat|Roboto|Questrial&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
@@ -62,7 +62,9 @@ a.social-links, a#scroll-prompt, a:link {
 #content {
   width: 100%;
   background-color: #050b2b;
-  background-image: linear-gradient(to bottom, #050b2b, #24035a, #050b2b )
+  /* background-image: linear-gradient(to bottom, #050b2b, #24035a, #050b2b ) */
+  background-image: linear-gradient(to top, #1f0261 0%, #050b2b 100%);
+  overflow: hidden;
 }
 
 .content-body {
@@ -72,13 +74,20 @@ a.social-links, a#scroll-prompt, a:link {
   margin: auto;
 }
 
+.desc-title {
+  color: #dadde8;
+  font-weight: 600;
+}
+
 .desc-text {
-  font-size: 18px;
+  font-size: 15px;
   padding-bottom: 10px;
+  color: #dadde8;
 }
 
 .desc-subtext {
   font-size: 16px;
+  font-weight: 600;
 }
 
 #icons {
@@ -98,19 +107,35 @@ a.social-links, a#scroll-prompt, a:link {
 .intro-title {
   color: #e4e6f0;
   margin: auto;
+  z-index: 1;
+}
+
+.intro-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 #landing-page {
   width: 100vw;
   margin: auto;
   height: 100vh;
-  background-image: url("Resources/oculus.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
   text-shadow: black 0px 0px 20px;
   margin-bottom: 150px;
+}
+
+.landing-page-subtext {
+  font-size: 16px;
+  font-style: italic;
+  margin-right: 5px;
+}
+
+.landing-page-subtext-container {
+  display: inline-flex;
 }
 
 #navbar {
@@ -121,6 +146,7 @@ a.social-links, a#scroll-prompt, a:link {
 #navbar .navlink {
   color: white;
   opacity: 1;
+  font-size: 14px;
 }
 
 .overlay {
@@ -167,6 +193,26 @@ a.social-links, a#scroll-prompt, a:link {
 
 .row {
   margin: 0 !important;
+}
+
+.section-title {
+  font-size: 44px;
+  font-weight: 600;
+  color: #dadde8;
+}
+
+#scroll-prompt {
+  animation: hover 1.5s ease-in-out infinite;
+}
+
+#scroll-prompt:hover {
+  cursor: pointer;
+}
+
+@keyframes hover {
+  0% {transform: translateY(-20px);}
+  50% {transform: translateY(15px);}
+  100% {transform: translateY(-20px);}
 }
 
 #scroll-prompt-wrapper {
