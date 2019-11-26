@@ -7,6 +7,7 @@ import Project1 from './components/Projects/project1'
 import Project2 from './components/Projects/project2'
 import Project3 from './components/Projects/project3'
 import Project4 from './components/Projects/project4'
+import Project5 from './components/Projects/project5'
 import Skills from './components/Skills'
 import Footer from './components/Footer'
 import { Row, Col } from 'reactstrap'
@@ -55,6 +56,7 @@ class App extends Component {
                     <hr />
                   </Col>
                 </Row>
+                <Project5 />
                 <Project1 />
                 <Project2 />
                 <Project3 />
