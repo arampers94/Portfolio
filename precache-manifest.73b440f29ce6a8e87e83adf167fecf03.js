@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9d71d9f2875a4152cd814d1cca9ccd7e",
+    "revision": "3a1e3b1fbb5bcda73ee81c23c9d84fcc",
     "url": "/Portfolio/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/css/2.b0bb7f2c.chunk.css"
   },
   {
-    "revision": "816cb8a88382915ca92d",
-    "url": "/Portfolio/static/css/main.162ce2ff.chunk.css"
+    "revision": "7ea4898202dc2850ebac",
+    "url": "/Portfolio/static/css/main.82b47260.chunk.css"
   },
   {
     "revision": "d97a2acf0f3084f70aca",
     "url": "/Portfolio/static/js/2.c6f945c1.chunk.js"
   },
   {
-    "revision": "816cb8a88382915ca92d",
-    "url": "/Portfolio/static/js/main.2ae19481.chunk.js"
+    "revision": "7ea4898202dc2850ebac",
+    "url": "/Portfolio/static/js/main.edb2d6db.chunk.js"
   },
   {
     "revision": "50f33df53c57cd5003d9",
@@ -84,8 +84,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/python.51c2eab2.svg"
   },
   {
-    "revision": "abc69669c0aa263447df4bda9992e8e7",
-    "url": "/Portfolio/static/media/react-pokedex.abc69669.png"
+    "revision": "8ed713616f7d0c85fcca47e766097d41",
+    "url": "/Portfolio/static/media/react-pokedex.8ed71361.png"
   },
   {
     "revision": "9a28da9f2a3fa419eb399e49f98cda39",
