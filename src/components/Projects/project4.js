@@ -20,7 +20,7 @@ const Project4 = (props) => {
               Tools: React, Reactstrap, CSS, Wow.js.
             </p>
             <Button outline color="success" href="https://github.com/arampers94/Portfolio" target="_blank" rel="noopener noreferrer">
-              Source
+              Code
             </Button>{' '}
           </div>
         </Col>

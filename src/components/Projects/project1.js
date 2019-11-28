@@ -26,10 +26,10 @@ const Project1 = (props) => {
               Tools: React, Shards React, CSS, React Reveal, Wow.js
             </p>
             <Button outline color="primary" href="https://nelson-and-murdock-law-firm.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
-              View
+              Demo
             </Button>{' '}
             <Button outline color="success" href="https://github.com/arampers94/nelson-and-murdock-law-firm" target="_blank" rel="noopener noreferrer">
-              Source
+              Code
             </Button>{' '}
           </div>
         </Col>

@@ -31,7 +31,10 @@ const Project2 = (props) => {
               Tools: React, Material UI
             </p>
             <Button outline color="primary" href="https://travel-blog-a435f.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
-              View
+              Demo
+            </Button>{' '}
+            <Button outline color="success" href="https://github.com/arampers94/travel-blog" target="_blank" rel="noopener noreferrer">
+              Code
             </Button>{' '}
             <Button outline color="danger" href="https://dribbble.com/shots/8131732-Travel-Blog-Web-Design" target="_blank" rel="noopener noreferrer">
               Original Design

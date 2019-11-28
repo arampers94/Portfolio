@@ -25,7 +25,10 @@ const Project3 = (props) => {
               Tools: React, Redux, React Router, Material UI, Firestore (NoSQL database), Firebase Auth, Sketch.
             </p>
             <Button outline color="primary" href="https://star-drug.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
-              View
+              Demo
+            </Button>{' '}
+            <Button outline color="success" href="https://github.com/arampers94/star-drug" target="_blank" rel="noopener noreferrer">
+              Code
             </Button>{' '}
           </div>
         </Col>

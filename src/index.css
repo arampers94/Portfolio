@@ -15,7 +15,7 @@ body {
 } */
 
 @media screen and (max-width: 767px) {
-  #project-2, #project-4 {
+  #project-2, #project-4, #project-5 {
     flex-direction: column-reverse;
   }
   
@@ -47,7 +47,6 @@ hr {
   opacity: 0.3;
   border: 0;
   height: 1px;
-  /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)); */
 }
 
 .about-title, .about-subtitle, .about-text {

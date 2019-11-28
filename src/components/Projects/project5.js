@@ -20,10 +20,10 @@ const Project5 = (props) => {
               Tools: React, PokeAPI, Axios, React Router, React Bootstrap, Sass
             </p>
             <Button outline color="primary" href="https://react-pokedex-60263.web.app/" target="_blank" rel="noopener noreferrer">
-              View
+              Demo
             </Button>{' '}
             <Button outline color="success" href="https://github.com/arampers94/react-pokedex" target="_blank" rel="noopener noreferrer">
-              Source
+              Code
             </Button>{' '}
           </div>
         </Col>
