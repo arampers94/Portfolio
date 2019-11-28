@@ -1,6 +1,6 @@
-# My portfolio site
+# Portfolio
 
-Personal portfolio built with HTML, CSS, JS, and React.
+A custom built portfolio that demonstrates my web development skills and showcases my best projects.
 
 ## Getting started
 
@@ -8,7 +8,7 @@ Instructions for downloading the repo for development and testing purposes.
 
 ### Prerequisites
 
-Make sure you have either npm or yarn installed first in order to install dependencies and run the project.
+Make sure you have either npm or yarn installed in order to install dependencies and run the project.
 
 ### Installing
 
@@ -37,15 +37,15 @@ npm start
 ```
 or
 ```
-yarn run start
+yarn start
 ```
 
 ## Tools used
 
-* HTML5
-* CSS3
-* Javascript
 * React
+* Reactstrap
+* CSS
+* Wow.js
 
 ## Contributors
 
