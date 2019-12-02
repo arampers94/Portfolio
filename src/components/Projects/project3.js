@@ -30,6 +30,9 @@ const Project3 = (props) => {
             <Button outline color="success" href="https://github.com/arampers94/star-drug" target="_blank" rel="noopener noreferrer">
               Code
             </Button>{' '}
+            <Button outline color="warning" href="https://www.lucidchart.com/documents/view/591a3f47-7437-403f-ae32-443bdaa0582d/0_0" target="_blank" rel="noopener noreferrer">
+              Architecture
+            </Button>
           </div>
         </Col>
       </Row>

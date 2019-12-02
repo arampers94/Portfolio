@@ -22,7 +22,7 @@ const Skills = () => {
           </Row>
           {icons.frontEnd.map((icon, index) => {
             return (
-              <div className="icon wow fadeInDown" data-wow-delay={icon.delayAnimation}>
+              <div className="icon wow fadeInDown" data-wow-delay={icon.delayAnimation} key={index}>
                 <img
                   src={icon.icon}
                   alt={index}
@@ -41,7 +41,7 @@ const Skills = () => {
           </Row>
           {icons.backEnd.map((icon, index) => {
             return (
-              <div className="icon wow fadeInDown" data-wow-delay={icon.delayAnimation}>
+              <div className="icon wow fadeInDown" data-wow-delay={icon.delayAnimation} key={index}>
                 <div className={icon.applyClass === true ? "icon-background" : null}></div>
                 <img
                   id={icon.id}
@@ -62,7 +62,7 @@ const Skills = () => {
           </Row>
           {icons.misc.map((icon, index) => {
             return (
-              <div className="icon wow fadeInDown" data-wow-delay={icon.delayAnimation}>
+              <div className="icon wow fadeInDown" data-wow-delay={icon.delayAnimation} key={index}>
                 <div className={icon.applyClass === true ? "icon-background" : null}></div>
                 <img
                   id={icon.id}

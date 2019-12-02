@@ -6,7 +6,7 @@ import MyNavbar from '../Navbar';
 const Intro = (props) => {
 
   var background = (
-    <div class="background">
+    <div className="background">
       <span></span>
       <span></span>
       <span></span>

@@ -13,11 +13,11 @@ const Project5 = (props) => {
             </h2>
             <p className="desc-text">
               This is a Pokédex web app powered by PokeAPI. My app consumes endpoints provided
-              by this RESTful API and renders the data with React to bring users a simple and
+              by this REST API and renders the data with React to bring users a simple and
               intuitive way to view data about various pokémon across every region!
             </p>
             <p className="desc-subtext">
-              Tools: React, PokeAPI, Axios, React Router, React Bootstrap, Sass
+              Tools: React, Redux, PokeAPI, Axios, React Router, React Bootstrap, Sass
             </p>
             <Button outline color="primary" href="https://react-pokedex-60263.web.app/" target="_blank" rel="noopener noreferrer">
               Demo
@@ -25,6 +25,9 @@ const Project5 = (props) => {
             <Button outline color="success" href="https://github.com/arampers94/react-pokedex" target="_blank" rel="noopener noreferrer">
               Code
             </Button>{' '}
+            <Button outline color="warning" href="https://www.lucidchart.com/documents/view/55b894cb-83b7-4210-9e6b-8c353b092d89" target="_blank" rel="noopener noreferrer">
+              Architecture
+            </Button>
           </div>
         </Col>
         <Col sm="12" md="6" className="wow fadeInRight">
